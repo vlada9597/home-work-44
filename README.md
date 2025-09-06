@@ -1,12 +1,78 @@
-# React + Vite
+# Home-work-44
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Цей проект демонструє використання **React Context** для передачі даних між компонентами без прокидання пропсів.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Структура проекту
 
-## Expanding the ESLint configuration
+home-work-44/
+├── src/
+│ ├── context/
+│ │ └── AppContext.jsx       # Створення та провайдер контексту
+│ ├── components/
+│ │ ├── UserList.jsx         # Список користувачів
+│ │ ├── UserProfile.jsx      # Профіль користувача
+│ │ └── ThemeSwitcher.jsx    # Кнопка зміни теми
+│ ├── App.jsx                # Основний компонент додатку
+│ ├── main.jsx               # Точка входу
+│ └── index.css
+├── package.json
+├── README.md
+└── ...
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+---
+
+## Функціонал
+
+- **Контекст AppContext**
+  - Зберігає глобальні дані додатку: список користувачів та поточну тему (`light` / `dark`).
+  - Забезпечує функцію для зміни теми.
+
+- **Компоненти**
+  - `UserList` – відображає список користувачів.
+  - `UserProfile` – відображає окремого користувача та змінює стиль залежно від теми.
+  - `ThemeSwitcher` – кнопка для перемикання теми між світлою та темною.
+
+- **React.memo**
+  - Використовується для оптимізації ререндерів компонентів, які отримують дані з контексту.
+
+---
+
+## Установка та запуск
+
+- Клонувати репозиторій:
+
+    git clone <URL_репозиторію>
+
+- Встановити залежності:
+
+    npm install
+
+- Запустити локальний сервер для розробки:
+
+    npm run dev
+
+- Відкрити додаток у браузері:
+
+    http://localhost:5173
+
+--------------
+
+Використання
+Тема змінюється через кнопку "Змінити тему".
+
+Список користувачів передається через контекст, без прокидання пропсів між компонентами.
+
+Додаток демонструє передачу даних через 2-3 рівні вкладеності компонентів.
+
+---------
+
+Технології:
+-React 19
+-Vite
+-JavaScript (ES6+)
+-CSS
+ 
