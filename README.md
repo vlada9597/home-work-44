@@ -71,11 +71,12 @@ home-work-44/
 ---------
 
 Технології:
--React 19
 
--Vite
+- React 19
 
--JavaScript (ES6+)
+- Vite
 
--CSS
+- JavaScript (ES6+)
+
+- CSS
  
