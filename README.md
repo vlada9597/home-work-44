@@ -72,7 +72,10 @@ home-work-44/
 
 Технології:
 -React 19
+
 -Vite
+
 -JavaScript (ES6+)
+
 -CSS
  
