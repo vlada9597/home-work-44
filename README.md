@@ -80,7 +80,7 @@ home-work-44/
 
 - CSS
 
+-------------
 
-
-##Посилання на демо-версію: https://home-work44.netlify.app/
+## Посилання на демо-версію: https://home-work44.netlify.app/
  
