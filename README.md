@@ -79,4 +79,8 @@ home-work-44/
 - JavaScript (ES6+)
 
 - CSS
+
+
+
+##Посилання на демо-версію: https://home-work44.netlify.app/
  
